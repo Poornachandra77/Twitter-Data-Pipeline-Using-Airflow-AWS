@@ -9,7 +9,9 @@ This project implements an ETL (Extract, Transform, Load) pipeline using Apache 
 # Project Structure
 
 twitter_etl.py        # ETL script for extracting tweets
+
 twitter_dag.py        # Airflow DAG definition
+
 requirements.txt       # Python dependencies
 
 # Requirements:-
