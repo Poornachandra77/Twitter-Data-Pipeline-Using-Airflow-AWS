@@ -1,11 +1,13 @@
 # Twitter-Data-Pipeline-Using-Airflow-AWS
 
 Twitter ETL with Apache Airflow
+
 Overview
+
 This project implements an ETL (Extract, Transform, Load) pipeline using Apache Airflow to extract tweets from a specified Twitter account, transform the data into a structured format, and load it into an AWS S3 bucket. The project is built on an EC2 instance, utilizing the Tweepy library for Twitter API interaction and Pandas for data manipulation.
 
 Project Structure
-bash
+
 Copy code
 .
 ├── twitter_etl.py        # ETL script for extracting tweets
