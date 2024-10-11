@@ -1,7 +1,10 @@
 
+
 # Twitter-Data-Pipeline-Using-Airflow-AWS
 
 Twitter ETL with Apache Airflow
+
+<img width="1440" alt="Screenshot 2024-10-11 at 11 17 06 AM" src="https://github.com/user-attachments/assets/f21823c1-8d7e-464f-93a8-0ef21286b84d">
 
 <img width="730" alt="Screenshot 2024-10-11 at 11 12 44 AM" src="https://github.com/user-attachments/assets/d5e8c680-aeea-4eda-81f1-9710c7cfda56">
 
