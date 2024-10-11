@@ -2,40 +2,36 @@
 
 Twitter ETL with Apache Airflow
 
-#Overview
+# Overview
 
 This project implements an ETL (Extract, Transform, Load) pipeline using Apache Airflow to extract tweets from a specified Twitter account, transform the data into a structured format, and load it into an AWS S3 bucket. The project is built on an EC2 instance, utilizing the Tweepy library for Twitter API interaction and Pandas for data manipulation.
 
-#Project Structure
+# Project Structure
 
-Copy code
-.
-├── twitter_etl.py        # ETL script for extracting tweets
-├── twitter_dag.py        # Airflow DAG definition
-└── requirements.txt       # Python dependencies
+twitter_etl.py        # ETL script for extracting tweets
+twitter_dag.py        # Airflow DAG definition
+requirements.txt       # Python dependencies
 
-Requirements:-
+# Requirements:-
 Python 3.6 or higher
 Apache Airflow
 Tweepy
 Pandas
 S3FS (for S3 interactions)
 
-Installation:-
+# Installation:-
 Clone the repository
 
-
-Twitter API Keys:
+# Twitter API Keys:
 
 Update the Twitter API credentials in the twitter_etl.py file:
-python
-Copy code
+
 access_key = "YOUR_ACCESS_KEY"
 access_secret = "YOUR_ACCESS_SECRET"
 consumer_key = "YOUR_CONSUMER_KEY"
 consumer_secret = "YOUR_CONSUMER_SECRET"
 
-AWS Credentials:
+# AWS Credentials:
 
 Ensure your AWS credentials are configured in the environment where Airflow runs, or use AWS IAM roles attached to the EC2 instance.
 Running the Project
@@ -48,7 +44,7 @@ Trigger the DAG:
 
 Locate the twitter_dag in the Airflow UI and trigger it manually or wait for the scheduled run (once a day).
 
-Code Description
+# Code Description
 twitter_etl.py
 This script handles the Twitter API authentication, extracts tweets from a specified account, and saves them in a CSV format. The main steps include:
 
@@ -64,6 +60,6 @@ Default arguments for the DAG (owner, retries, etc.).
 A single task that calls the run_twitter_etl function from twitter_etl.py.
 Scheduling the DAG to run daily.
 
-Notes:-
+# Notes:-
 Ensure that your Twitter API keys have sufficient access to retrieve tweets.
 Consider implementing logging for better monitoring and debugging of the ETL process.
